@@ -13,8 +13,14 @@ const CounterSlice = createSlice({
         increment:(state)=>{
 state.value+=1
         },
+        decrement:(state)=>{
+            state.value>0?state.value-=1
+        }
         
+
     }
 }) 
+
+
 
 export default CounterSlice.reducer
