@@ -18,3 +18,7 @@ current.value-=1
         }
     }
 })
+
+export const {increment,decrement}=counterSlice2.actions
+
+export default counterSlice2.reducer
