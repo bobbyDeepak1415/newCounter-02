@@ -15,12 +15,14 @@ const counterSlice3 = createSlice({
       if (state.value <= 0) return;
       state.value -= 1;
     },
-    incrementByAmount: (state,action) => {
-      state.value+=action.payload;
+    incrementByAmount: (state, action) => {
+      state.value += action.payload;
     },
-    multiplyBy2: () => {},
+    multiplyBy2: (state) => {
+      state.value *= 2;
+    },
   },
-})
+});
 
 export const { increment, decrement, incrementByAmount, multiplyBy2 } =
   counterSlice3.actions;
